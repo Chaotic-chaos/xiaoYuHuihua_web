@@ -3,89 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <title>会议室</title>
-    <link rel="stylesheet" href="./layui-v2.5.7/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/2.4.2/weui.css">
     <link  rel="stylesheet" href="./utils/css/chat.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
 </head>
-<body style="background-color: lightblue;">
-
-<!--    navBar-->
-<ul class="layui-nav layui-bg-cyan">
-    <li class="layui-nav-item"><a class="layui-icon layui-icon-left" style="font-size: 30px;"></a></li>
-    <li class="layui-nav-item"><h3 style="text-align: center;">小语会话</h3></li>
-    <li class="layui-nav-item layui-layout-right" style="margin-right: 30px;">
-        <p class="layui-inline" style="margin-right: 20px;" id="meeting_id">会议号：</p>
-        <img src="utils/statics/headPic.jpg" class="layui-nav-img">
-    </li>
-</ul>
-
-<div class="layui-container">
-    <div class="layui-row">
-        <div class="layui-col-md12 layui-col-xs12" style="margin-left: auto; margin-right: auto;">
-            <br>
-            <div class="msg_content">
-                <img src="utils/statics/headPic.jpg" class="layui-circle" style="max-width: 60px; float: left;">
-                <div class="left">
-                    <p>我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字</p>
-                </div>
-                <br/>
-            </div>
-            <div class="msg_content">
-                <img src="utils/statics/headPic.jpg" class="layui-circle" style="max-width: 60px; float: left;">
-                <div class="left">
-                    <p>我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字</p>
-                </div>
-                <br/>
-            </div>
-            <div class="msg_content">
-                <img src="utils/statics/headPic.jpg" class="layui-circle" style="max-width: 60px; float: left;">
-                <div class="left">
-                    <p>我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字</p>
-                </div>
-                <br/>
-            </div>
-            <div class="msg_content">
-                <img src="utils/statics/headPic.jpg" class="layui-circle" style="max-width: 60px; float: left;">
-                <div class="left">
-                    <p>我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字</p>
-                </div>
-                <br/>
-            </div>
-            <div class="msg_content">
-                <img src="utils/statics/headPic.jpg" class="layui-circle" style="max-width: 60px; float: left;">
-                <div class="left">
-                    <p>我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字</p>
-                </div>
-                <br/>
-            </div>
-            <div class="msg_content">
-                <div class="right">
-                    <p>我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字</p>
-                </div>
-                <br/>
-            </div>
-            <div class="msg_content">
-                <div class="right">
-                    <p>我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字</p>
-                </div>
-                <br/>
-            </div>
-            <div class="msg_content">
-                <div class="right">
-                    <p>我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字</p>
-                </div>
-                <br/>
-            </div>
-            <div class="msg_content">
-                <div class="right">
-                    <p>我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字我是一行文字</p>
-                </div>
-                <br/>
-            </div>
+<body>
+<div class="page">
+    <div class="page__hd">
+        <h3 class="meeting_id">会议号：HDGYTZGS</h3>
+        <h1 class="page__title">小语会话</h1>
+        <p class="page__desc">小语会话服务端Demo</p>
+        <br>
+        <div class="weui-progress__bar">
+            <div class="weui-progress__inner-bar js_progress" style="width: 100%"></div>
         </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="main_content">
+        <div class="attendees_msg">
+            <img class="attendees_head" src="utils/statics/headPic.jpg">
+            <div class="left">
+                <p>这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字</p>
+            </div>
+            <br><br>
+        </div>
+        <div class="attendees_msg">
+            <img class="attendees_head" src="utils/statics/headPic.jpg">
+            <div class="left">
+                <p>111</p>
+            </div>
+            <br><br>
+        </div>
+        <div class="self_msg">
+            <div class="right">
+                <p>111</p>
+            </div>
+            <div class="clear"></div>
+            <br><br>
+        </div>
+        <div class="self_msg">
+            <div class="right">
+                <p>这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字</p>
+            </div>
+            <div class="clear"></div>
+            <br><br>
+        </div>
+        <div class="self_msg">
+            <div class="right">
+                <p>这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字</p>
+            </div>
+            <div class="clear"></div>
+            <br><br>
+        </div>
+        <div class="attendees_msg">
+            <img class="attendees_head" src="utils/statics/headPic.jpg">
+            <div class="left">
+                <p>111</p>
+            </div>
+            <br><br>
+        </div>
+        <div class="attendees_msg">
+            <img class="attendees_head" src="utils/statics/headPic.jpg">
+            <div class="left">
+                <p>这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字这是一行文字</p>
+            </div>
+            <br><br>
+        </div>
+    </div>
+
+    <div class="input_container">
+        <input class="weui-input" type="text" id="input_msg" placeholder="请输入消息...">
+        <a class="weui-btn weui-btn_mini weui-btn_primary" id="send_msg">发送</a>
     </div>
 </div>
 
-<!--    引入layui.js-->
-<script src="./layui-v2.5.7/layui/layui.js" charset="utf-8"></script>
+<script type="text/javascript" src="utils/js/chat.js"></script>
 </body>
 </html>

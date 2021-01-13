@@ -3,54 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>小语会话WebDemo</title>
-    <link rel="stylesheet" href="./layui-v2.5.7/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/2.4.2/weui.css">
+    <link rel="stylesheet" href="./utils/css/index.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
 </head>
-<body style="background-color: lightblue;">
-<!--    navBar-->
-<ul class="layui-nav layui-bg-cyan">
-    <li class="layui-nav-item"><a class="layui-icon layui-icon-left" style="font-size: 30px; display: none;"></a></li>
-    <li class="layui-nav-item" style="text-align: center;"><h3 style="text-align: center;">小语会话</h3></li>
-    <li class="layui-nav-item layui-layout-right" style="margin-right: 30px;"><img src="utils/statics/headPic.jpg" class="layui-nav-img"></li>
-</ul>
+<body>
+<div class="page">
+    <div class="page__hd">
+        <h1 class="page__title">小语会话</h1>
+        <p class="page__desc">小语会话服务端Demo</p>
+        <br>
+        <div class="weui-progress__bar">
+            <div class="weui-progress__inner-bar js_progress" style="width: 100%"></div>
+        </div>
+    </div>
 
-<!--maincontent-->
-<div class="layui-row layui-col-space10" style="visibility: hidden;">
-    <div class="layui-col-md4 layui-col-xs4">
-        <button class="layui-btn layui-btn-fluid">aaa</button>
+    <div class="main_content">
+        <div class="inputs_container">
+            <input class="weui-input user_info" placeholder="请输入您的姓名..." id="user_name">
+            <br>
+            <hr>
+            <br>
+            <input class="weui-input user_info" placeholder="会议号，创建会议不需要填写" id="meeting_id">
+        </div>
+        <div class="btn_container">
+            <a id="create_meeting" class="weui-btn_cell weui-btn_cell-default" style="color: white; background-color: var(--weui-TAG-TEXT-GREEN); font-size: 45px;">创建会议</a>
+            <br>
+            <a id="join_meeting" class="weui-btn_cell weui-btn_cell-default" style="color: white; background-color: var(--weui-TAG-TEXT-GREEN); font-size: 45px;">加入会议</a>
+        </div>
     </div>
-    <div class="layui-col-md4 layui-col-xs4">
-        <button class="layui-btn layui-btn-fluid">aaa</button>
-    </div>
-    <div class="layui-col-md4 layui-col-xs4">
-        <button class="layui-btn layui-btn-fluid">aaa</button>
+
+    <div class="footer">
+        <br>
+        <p id="current_meeting_count"></p>
+        <p id="current_user_count"></p>
     </div>
 </div>
 
-<div class="layui-row layui-col-space10">
-    <div class="layui-col-md4 layui-col-xs4" style="visibility: hidden;">
-        <button class="layui-btn layui-btn-fluid">aaa</button>
-    </div>
-    <div class="layui-col-md4 layui-col-xs4">
-        <button class="layui-btn layui-btn-fluid">创建会议</button>
-    </div>
-    <div class="layui-col-md4 layui-col-xs4" style="visibility: hidden;">
-        <button class="layui-btn layui-btn-fluid">aaa</button>
-    </div>
-</div>
-
-<div class="layui-row layui-col-space10">
-    <div class="layui-col-md4 layui-col-xs4" style="visibility: hidden;">
-        <button class="layui-btn layui-btn-fluid">aaa</button>
-    </div>
-    <div class="layui-col-md4 layui-col-xs4">
-        <button class="layui-btn layui-btn-fluid">加入会议</button>
-    </div>
-    <div class="layui-col-md4 layui-col-xs4" style="visibility: hidden;">
-        <button class="layui-btn layui-btn-fluid">aaa</button>
-    </div>
-</div>
-
-<!--    引入layui.js-->
-    <script src="./layui-v2.5.7/layui/layui.js" charset="utf-8"></script>
+<script type="text/javascript" src="https://res.wx.qq.com/open/libs/weuijs/1.2.1/weui.min.js"></script>
+<script type="text/javascript" src="utils/js/index.js"></script>
 </body>
 </html>

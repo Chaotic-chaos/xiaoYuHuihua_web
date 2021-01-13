@@ -1,18 +1,52 @@
+body {
+    background-color: var(--weui-BG-0);
+    margin-bottom: 100px;
+}
+
+.page__hd {
+    padding: 40px;
+}
+
+.page__title {
+    text-align: left;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.meeting_id {
+    float: right;
+    font-size: 45px;
+    margin-top: 25px;
+}
+
+.page__desc {
+    font-size: 40px;
+    margin-top: 4px;
+    color: var(--weui-FG-1);
+    text-align: left;
+}
+
+.main_content {
+    /*background-color: black;*/
+}
 
 .left,.right{
     min-height: 60px;
-    max-width: 350px;
     position: relative;
     left: 10px;
     display: table;
     text-align: center;
     border-radius: 7px;
     background-color:#9EEA6A;
+    font-size: 50px;
+    max-width: 800px;
+    padding: 10px;
 }
 .right{      /*使左右的对话框分开*/
     top: 20px;
-    left: 150px;
     background-color: #FC3;
+    float: right;
+    margin-right: 40px;
 }
 .left > p,.right > p{    /*使内容居中*/
     display: table-cell;
@@ -36,4 +70,39 @@
 .right:after{
     border-left: 16px solid #FC3;
     right: -30px;
+}
+
+.attendees_head {
+    max-width: 100px;
+    float: left;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.input_container {
+    background-color: lightgrey;
+    position: fixed;
+    bottom: 0;
+    min-height: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+#input_msg {
+    font-size: 60px;
+    margin: 20px;
+    border: 2px solid;
+    border-color: white;
+    /*float: left;*/
+    max-width: 75%;
+    background-color: white;
+    margin-top: 0;
+}
+
+#send_msg {
+    font-size: 45px;
+}
+
+.clear {
+    clear: both;
 }

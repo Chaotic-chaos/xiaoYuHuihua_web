@@ -1,0 +1,41 @@
+body {
+    background-color: var(--weui-BG-0);
+}
+
+.page__hd {
+    padding: 40px;
+}
+
+.page__title {
+    text-align: left;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.page__desc {
+    font-size: 40px;
+    margin-top: 4px;
+    color: var(--weui-FG-1);
+    text-align: left;
+}
+
+.btn_container {
+    /*background-color: black;*/
+    padding: 30px;
+}
+
+.inputs_container {
+    padding: 30px;
+}
+
+.user_info {
+    font-size: 60px;
+    background-color: white;
+    border: 2px solid;
+    border-color: limegreen;
+}
+
+.footer {
+    font-size: 35px;
+    text-align: center;
+}
