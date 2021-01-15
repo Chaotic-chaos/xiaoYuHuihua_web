@@ -38,7 +38,8 @@ $(document).ready(function(){
         else{
             $.removeCookie('user_name')
             $.cookie('user_name', name);
-            $(location).attr('href', 'chat.html?type=create');
+            $.cookie('type', 'create');
+            $(location).attr('href', 'chat.html');
         }
     })
 
@@ -51,9 +52,11 @@ $(document).ready(function(){
         }
         else{
             $.removeCookie('user_name')
+            $.removeCookie('type');
             $.cookie('user_name', name, {path: '/'});
             $.cookie('meeting_id', meeting_id, {path: '/',});
-            $(location).attr('href', 'chat.html?type=join');
+            $.cookie('type', 'join');
+            $(location).attr('href', 'chat.html');
         }
     })
 })
