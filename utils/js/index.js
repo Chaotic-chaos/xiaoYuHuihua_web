@@ -1,3 +1,5 @@
+var ws_url = '127.0.0.1:10000';
+
 $(document).ready(function(){
     // find uuid if in cookie
     var uuid;
@@ -12,7 +14,7 @@ $(document).ready(function(){
     }
 
     // ask for token
-    $.get('http://47.101.133.73:10000/getID?uuid=' + uuid, function (data){
+    $.get('http://' + ws_url + '/getID?uuid=' + uuid, function (data){
         if(data.status_code != 200){
             // failed
             alert("获取身份失败，请重试");
@@ -22,7 +24,7 @@ $(document).ready(function(){
         }
     })
 
-    $.get('http://47.101.133.73:10000/count_active_users', function(data){
+    $.get('http://' + ws_url + '/count_active_users', function(data){
         // count curren active user count
         data = data.split(',');
         $('#current_meeting_count').text("当前会议数：" + data[0]);

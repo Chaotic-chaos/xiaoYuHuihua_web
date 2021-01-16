@@ -103,6 +103,19 @@ body {
     font-size: 45px;
 }
 
+.admin_msg {
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+    max-width: 60%;
+    margin: auto;
+    background-color: #d9d9d9;
+}
+
+.attendee_name {
+    font-size: 35px;
+}
+
 .clear {
     clear: both;
 }
